@@ -30,23 +30,23 @@ const TAB_DATA = [
     content: (
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <SkillCard 
-          title="Development" 
-          skills={["Node.js", "Next.js", "React", "JavaScript"]}
+          title="Blank" 
+          skills={["Blank"]}
           color="cyan"
         />
         <SkillCard 
-          title="Game Dev" 
-          skills={["Unity", "Godot", "C#", "C++"]}
+          title="Blank" 
+          skills={["Blank"]}
           color="purple"
         />
         <SkillCard 
-          title="AI & ML" 
-          skills={["Python", "OpenCV", "Deep Learning", "LLM"]}
+          title="Blank" 
+          skills={["Blank"]}
           color="green"
         />
         <SkillCard 
-          title="Other" 
-          skills={["PostgreSQL", "Git", "GCP", "VR/AR"]}
+          title="Blank" 
+          skills={["Blank"]}
           color="yellow"
         />
       </div>
@@ -59,22 +59,10 @@ const TAB_DATA = [
       <div className="flex flex-col space-y-4">
         <div className="bg-[#181818] p-6 rounded-lg border border-gray-800">
           <div className="flex flex-col space-y-4">
-            {/* Masters Degree */}
-            <div className="flex flex-col space-y-2">
-              <h3 className="text-xl font-bold text-white">
-                Master&apos;s in Computer Science
-              </h3>
-              <p className="text-gray-300">University of Texas Rio Grande Valley</p>
-              <div className="flex items-center space-x-2">
-                <div className="h-1 w-1 rounded-full bg-gray-400"></div>
-                <span className="text-sm text-gray-400">Graduate Studies</span>
-              </div>
-            </div>
-
             {/* Bachelors Degree */}
             <div className="flex flex-col space-y-2">
               <h3 className="text-xl font-bold text-white">
-                Bachelor&apos;s in Computer Science
+                Pursuing a Bachelor's Degree in Computer Science
               </h3>
               <p className="text-gray-300">University of Texas Rio Grande Valley</p>
               <div className="flex items-center space-x-2">
@@ -94,13 +82,6 @@ const TAB_DATA = [
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         <HobbyCard 
           icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1H2a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H2a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-          </svg>}
-          text="Game Development"
-          color="purple"
-        />
-        <HobbyCard 
-          icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>}
           text="Reading Manga/Manhwa"
@@ -112,27 +93,6 @@ const TAB_DATA = [
           </svg>}
           text="Watching Animated Shows"
           color="blue"
-        />
-        <HobbyCard 
-          icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-          </svg>}
-          text="Cooking and Baking"
-          color="yellow"
-        />
-        <HobbyCard 
-          icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
-          </svg>}
-          text="Playing Video Games"
-          color="green"
-        />
-        <HobbyCard 
-          icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-          </svg>}
-          text="Drawing"
-          color="pink"
         />
       </div>
     ),
@@ -221,29 +181,27 @@ const AboutSection = () => {
           <div className="space-y-8">
             <p className="text-base lg:text-lg leading-relaxed">
               <span className="block text-gray-300 hover:text-white transition-colors duration-300">
-                I am a Graduate Research Assistant at 
+                I am an undergraduate computer science student at the University of Texas Rio Grande Valley. 
                 <span className="text-cyan-400 font-medium hover:text-cyan-300"> ASARG </span>
-                (Algorithmic Self-Assembly Research Group) and a part-time developer at 
+                I enjoy learning about things I find interesting and have a small obsession with reading.
                 <span className="text-purple-400 font-medium hover:text-purple-300"> MVSSIVE</span>, 
-                a music technology company.
+                I love chocolate and reading fanfiction or light novels. 
               </span>
             </p>
             
             <p className="text-base lg:text-lg leading-relaxed">
               <span className="block text-gray-300 hover:text-white transition-colors duration-300">
-                As a former instructor for 
+                I disike tedious assignments but wierdly enough enjoy the classes themselves that give tedious work.
                 <span className="text-green-400 font-medium hover:text-green-300"> CSCI 1101</span>, 
-                I had the privilege of introducing computer science fundamentals to new students, 
-                hoping to inspire the next generation of developers.
+                I am currently taking an intro class for computer science. I have a strong interest in artificial intelligence and machine learning, constantly exploring new advancements
+                 hoping to one day be able to create my dream game.
               </span>
             </p>
 
             <p className="text-base lg:text-lg leading-relaxed">
               <span className="block text-gray-300 hover:text-white transition-colors duration-300">
-                My passion lies in theoretical computer science, and I&apos;m actively pursuing my goal 
-                of obtaining a PhD in this field. Alongside my academic pursuits, I&apos;m also an avid 
-                game developer, having created various games and projects that combine my love for 
-                programming with creative expression.
+                My main passion lays in reading manwha and fanfiction stories. I have ADHD so while not reading I run or walk around 
+               and even while reading I eventually need to move for an hour or so to lose energy.
               </span>
             </p>
             
