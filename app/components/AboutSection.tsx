@@ -62,7 +62,7 @@ const TAB_DATA = [
             {/* Bachelors Degree */}
             <div className="flex flex-col space-y-2">
               <h3 className="text-xl font-bold text-white">
-                Pursuing a Bachelor's Degree in Computer Science
+                Pursuing a Bachelor &apos;s Degree in Computer Science
               </h3>
               <p className="text-gray-300">University of Texas Rio Grande Valley</p>
               <div className="flex items-center space-x-2">
