@@ -102,11 +102,14 @@ const TAB_DATA = [
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
+  // Use images from the `public/images` folder (these are served at /images/...)
   const images = [
-    '/images/ImageCarousel/AsherAndMe.jpg',
-    '/images/ImageCarousel/MeInIndianaU.jpg',
-    '/images/ImageCarousel/StudentsAndMe.jpg',
-    '/images/ImageCarousel/WylieAndMe.jpg'
+    '/images/OIP (4).webp',
+    '/images/download (1).webp',
+    '/images/download (2).webp',
+    '/images/download (3).webp',
+    '/images/download.webp',
+    '/images/5662b6516fe08bf4ea667921710ff7ae.jpg',
   ];
 
   useEffect(() => {
@@ -117,41 +120,39 @@ const ImageCarousel = () => {
     }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
-    <div className="relative w-full h-[500px] overflow-hidden rounded-lg">
+    <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
       {/* Background blur effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 blur-3xl"></div>
-      
-      {/* Image container */}
-      <div className="relative h-full">
-        {images.map((img, index) => (
+
+      {/* Stacked images: each image covers the aspect frame using object-cover */}
+      {images.map((src, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
+            index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+          }`}
+        >
           <Image
-            key={index}
-            src={img}
+            src={src}
             alt={`About image ${index + 1}`}
             fill
-            className={`object-cover transition-all duration-500 ${
-              index === currentIndex 
-                ? "opacity-100" 
-                : "opacity-0"
-            }`}
+            className="object-cover"
             priority={index === 0}
           />
-        ))}
-      </div>
+        </div>
+      ))}
 
       {/* Navigation dots */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentIndex 
-                ? "bg-white w-4" 
-                : "bg-white/50"
+              index === currentIndex ? 'bg-white w-4' : 'bg-white/50'
             }`}
           />
         ))}
