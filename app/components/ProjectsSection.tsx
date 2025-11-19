@@ -84,7 +84,7 @@ const projectsData = [
     image: "-",
     tag: ["-"],
     gitUrl: "-",
-    previewUrl: "-,
+    previewUrl: "-"
   },
 ];
 
