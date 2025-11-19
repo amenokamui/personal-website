@@ -70,7 +70,7 @@ const projectsData = [
   },
   {
     id: 9,
-    title: "- ",
+    title: "-",
     description: "-",
     image: "-",
     tag: ["-"],
