@@ -102,14 +102,14 @@ const TAB_DATA = [
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  // Use images from the `public/images` folder (these are served at /images/...)
+  // Use images from the `public/images/ImageCarousel` folder
   const images = [
-    '/images/OIP (4).webp',
-    '/images/download (1).webp',
-    '/images/download (2).webp',
-    '/images/download (3).webp',
-    '/images/download.webp',
-    '/images/5662b6516fe08bf4ea667921710ff7ae.jpg',
+    '/images/ImageCarousel/OIP (4).webp',
+    '/images/ImageCarousel/OIP (3).webp',
+    '/images/ImageCarousel/OIP (2).webp',
+    '/images/ImageCarousel/download (1).webp',
+    '/images/ImageCarousel/download.webp',
+    '/images/ImageCarousel/5662b6516fe08bf4ea667921710ff7ae.jpg',
   ];
 
   useEffect(() => {
