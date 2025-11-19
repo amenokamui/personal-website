@@ -104,7 +104,8 @@ const ImageCarousel = () => {
   
   // Use images from the `public/images/ImageCarousel` folder
   const images = [
-    '/images/ImageCarousel/Asta Sword Arc.webp',
+    '/images/ImageCarousel/True Devil Union.webp',
+    '/images/ImageCarousel/Lazy Cale.jpg',
     '/images/ImageCarousel/Godess Witira.jpg',
     '/images/ImageCarousel/Goku 1UI.jpg',
   ];
