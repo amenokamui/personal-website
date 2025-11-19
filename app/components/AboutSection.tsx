@@ -123,7 +123,7 @@ const ImageCarousel = () => {
   }, [images.length]);
 
   return (
-    <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
+    <div className="relative w-full max-w-[1100px] mx-auto h-[650px] md:h-[700px] overflow-hidden rounded-lg">
       {/* Background blur effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 blur-3xl"></div>
 
