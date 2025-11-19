@@ -19,21 +19,21 @@ export default function RootLayout({
       <body className={inter.className}>
         {/* Background video (place an MP4 at public/videos/background.mp4) */}
 
-        <div className="fixed inset-0 -z-10">
+        <div className="fixed inset-0 z-0">
           <video
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-full object-cover bg-black"
+            className="absolute inset-0 w-full h-full object-cover"
           >
             <source src="/images/Background/rainy-pine-forest.1920x1080.mp4" type="video/mp4" />
           </video>
           {/* subtle overlay to improve text contrast */}
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/40 z-10" />
         </div>
 
-        <div className="relative z-10 min-h-screen">{children}</div>
+        <div className="relative z-20 min-h-screen">{children}</div>
       </body>
     </html>
   );
