@@ -8,11 +8,11 @@ const projectsData = [
   {
     id: 1,
     title: "Tic Tac Toe",
-    description: "An interactive tic-tac-toe game built with React",
-    image: "/images/Projects/tictactoe.png",
+    description: "First Project",
+    image: "/images/Projects/Screenshot 2026-01-14 212212.png",
     tag: ["All", "Web", "Game"],
-    gitUrl: "https://github.com/yourusername/tic-tac-toe",
-    previewUrl: "https://your-tictactoe-project.vercel.app",
+    gitUrl: "https://github.com/amenokamui/tic-tac-toe",
+    previewUrl: "https://tic-tac-toe-swart-rho-78.vercel.app/",
   },
   {
     id: 2,
