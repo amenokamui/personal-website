@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "Tic Tac Toe",
     description: "First Project",
-    image: "/images/Projects/Screenshot 2026-01-14 212212.png",
+    image: "/images/Projects/tic-tac-toe.png",
     tag: ["All", "Web", "Game"],
     gitUrl: "https://github.com/amenokamui/tic-tac-toe",
     previewUrl: "https://tic-tac-toe-swart-rho-78.vercel.app/",
